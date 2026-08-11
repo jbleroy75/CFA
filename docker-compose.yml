@@ -1,0 +1,14 @@
+services:
+  app:
+    build: .
+    container_name: cfa-recall
+    restart: unless-stopped
+    environment:
+      PORT: 3000
+      DB_PATH: /data/cfa.sqlite3
+    ports:
+      - "${APP_PORT:-3000}:3000"
+    volumes:
+      - cfa_data:/data
+volumes:
+  cfa_data:
