@@ -1,0 +1,84 @@
+{
+  "program": {
+    "slug": "cfa-program-level-i-2027",
+    "name": "CFA Program – Level I 2027",
+    "sourceCode": "CFA-27-02-LI-B"
+  },
+  "version": "2027.1",
+  "modules": [
+    {
+      "topic": "Quantitative Methods",
+      "slug": "time-value-money",
+      "name": "Time Value of Money",
+      "sortOrder": 1
+    }
+  ],
+  "concepts": [
+    {
+      "topic": "Quantitative Methods",
+      "module": "time-value-money",
+      "slug": "simple-interest",
+      "name": "Simple Interest",
+      "los": "Distinguish simple and compound interest",
+      "importance": 0.8,
+      "prerequisites": []
+    },
+    {
+      "topic": "Quantitative Methods",
+      "module": "time-value-money",
+      "slug": "future-value",
+      "name": "Future Value",
+      "los": "Calculate future value",
+      "importance": 1.2,
+      "prerequisites": ["simple-interest"]
+    }
+  ],
+  "formulas": [
+    {
+      "concept": "future-value",
+      "name": "Future Value",
+      "expression": "FV = PV(1+r)^n",
+      "variables": {
+        "FV": "future value",
+        "PV": "present value",
+        "r": "periodic rate",
+        "n": "periods"
+      },
+      "explanation": "Compound future value.",
+      "sourceRef": "owned-content:quant:formula:001"
+    }
+  ],
+  "questions": [
+    {
+      "topic": "Quantitative Methods",
+      "module": "time-value-money",
+      "concepts": ["future-value"],
+      "prompt": "A normalized example question goes here.",
+      "options": ["Option A", "Option B", "Option C"],
+      "correct": "A",
+      "explanation": "Explain both the correct answer and the trap.",
+      "difficulty": 2,
+      "type": "calculation",
+      "los": "Calculate future value",
+      "sourceRef": "owned-content:quant:001",
+      "distractorConcepts": {"B": "simple-interest"}
+    }
+  ],
+  "assessmentSets": [
+    {
+      "collection": "mock-exams",
+      "slug": "mock-exam-example",
+      "name": "Mock Exam Example",
+      "type": "mock",
+      "sourceCode": "CFA-27-02-LI-B",
+      "sortOrder": 1,
+      "items": [
+        {
+          "questionSourceRef": "owned-content:quant:001",
+          "position": 1,
+          "section": "session-1"
+        }
+      ]
+    }
+  ]
+}
