@@ -1,0 +1,122 @@
+{
+  "program": {
+    "slug": "cfa-program-level-i-2027",
+    "name": "CFA Program – Level I 2027",
+    "level": "I",
+    "year": 2027,
+    "sourceCode": "CFA-27-02-LI-B",
+    "curriculumName": "Curriculum – Level I February 2027",
+    "totalModules": 102
+  },
+  "topics": [
+    {
+      "sortOrder": 1,
+      "slug": "quant",
+      "sourceLabel": "Quantitative Methods",
+      "canonicalCfaTopic": "Quantitative Methods",
+      "examWeight": {"min": 6, "max": 9},
+      "courseId": 2111,
+      "moduleCount": 11,
+      "modulesUrl": "https://learn.cfainstitute.org/courses/2111/modules"
+    },
+    {
+      "sortOrder": 2,
+      "slug": "economics",
+      "sourceLabel": "Economics",
+      "canonicalCfaTopic": "Economics",
+      "examWeight": {"min": 6, "max": 9},
+      "courseId": 2112,
+      "moduleCount": 8,
+      "modulesUrl": "https://learn.cfainstitute.org/courses/2112/modules"
+    },
+    {
+      "sortOrder": 3,
+      "slug": "corporate",
+      "sourceLabel": "Corporate Finance",
+      "canonicalCfaTopic": "Corporate Issuers",
+      "examWeight": {"min": 6, "max": 9},
+      "courseId": 2113,
+      "moduleCount": 7,
+      "modulesUrl": "https://learn.cfainstitute.org/courses/2113/modules"
+    },
+    {
+      "sortOrder": 4,
+      "slug": "fsa",
+      "sourceLabel": "Financial Statement Analysis",
+      "canonicalCfaTopic": "Financial Statement Analysis",
+      "examWeight": {"min": 11, "max": 14},
+      "courseId": 2114,
+      "moduleCount": 12,
+      "modulesUrl": "https://learn.cfainstitute.org/courses/2114/modules"
+    },
+    {
+      "sortOrder": 5,
+      "slug": "equity",
+      "sourceLabel": "Equities",
+      "canonicalCfaTopic": "Equity Investments",
+      "examWeight": {"min": 11, "max": 14},
+      "courseId": 2115,
+      "moduleCount": 12,
+      "modulesUrl": "https://learn.cfainstitute.org/courses/2115/modules"
+    },
+    {
+      "sortOrder": 6,
+      "slug": "fixed-income",
+      "sourceLabel": "Fixed Income",
+      "canonicalCfaTopic": "Fixed Income",
+      "examWeight": {"min": 11, "max": 14},
+      "courseId": 2116,
+      "moduleCount": 19,
+      "modulesUrl": "https://learn.cfainstitute.org/courses/2116/modules"
+    },
+    {
+      "sortOrder": 7,
+      "slug": "derivatives",
+      "sourceLabel": "Derivatives",
+      "canonicalCfaTopic": "Derivatives",
+      "examWeight": {"min": 5, "max": 8},
+      "courseId": 2117,
+      "moduleCount": 10,
+      "modulesUrl": "https://learn.cfainstitute.org/courses/2117/modules"
+    },
+    {
+      "sortOrder": 8,
+      "slug": "alternatives",
+      "sourceLabel": "Alternative Investments",
+      "canonicalCfaTopic": "Alternative Investments",
+      "examWeight": {"min": 7, "max": 10},
+      "courseId": 2118,
+      "moduleCount": 7,
+      "modulesUrl": "https://learn.cfainstitute.org/courses/2118/modules"
+    },
+    {
+      "sortOrder": 9,
+      "slug": "portfolio",
+      "sourceLabel": "Portfolio Construction",
+      "canonicalCfaTopic": "Portfolio Management",
+      "examWeight": {"min": 8, "max": 12},
+      "courseId": 2119,
+      "moduleCount": 6,
+      "modulesUrl": "https://learn.cfainstitute.org/courses/2119/modules"
+    },
+    {
+      "sortOrder": 10,
+      "slug": "ethics",
+      "sourceLabel": "Ethical and Professional Standards",
+      "canonicalCfaTopic": "Ethical and Professional Standards",
+      "examWeight": {"min": 15, "max": 20},
+      "courseId": 2120,
+      "moduleCount": 10,
+      "modulesUrl": "https://learn.cfainstitute.org/courses/2120/modules"
+    }
+  ],
+  "assessmentCollections": [
+    {
+      "sortOrder": 1,
+      "slug": "mock-exams",
+      "sourceLabel": "Mock Exams",
+      "type": "mock",
+      "masteryTopic": false
+    }
+  ]
+}
