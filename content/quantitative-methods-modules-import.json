@@ -1,0 +1,25 @@
+{
+  "program": {
+    "slug": "cfa-program-level-i-2027",
+    "name": "CFA Program – Level I 2027",
+    "sourceCode": "CFA-27-02-LI-B"
+  },
+  "version": "2027.2-quant-modules",
+  "modules": [
+    {"topic": "quant", "slug": "quant-m01-returns-financial-assets-instruments", "name": "Returns of Financial Assets and Instruments", "sortOrder": 1},
+    {"topic": "quant", "slug": "quant-m02-types-financial-returns", "name": "Types of Financial Returns", "sortOrder": 2},
+    {"topic": "quant", "slug": "quant-m03-benchmarking-returns", "name": "Benchmarking Returns", "sortOrder": 3},
+    {"topic": "quant", "slug": "quant-m04-time-value-money-finance", "name": "The Time Value of Money in Finance", "sortOrder": 4},
+    {"topic": "quant", "slug": "quant-m05-statistical-characteristics-asset-returns", "name": "Statistical Characteristics of Asset Returns", "sortOrder": 5},
+    {"topic": "quant", "slug": "quant-m06-statistical-distributions-asset-prices-returns", "name": "Statistical Distributions for Financial Asset Prices and Returns", "sortOrder": 6},
+    {"topic": "quant", "slug": "quant-m07-estimation-hypothesis-testing", "name": "Estimation and Hypothesis Testing", "sortOrder": 7},
+    {"topic": "quant", "slug": "quant-m08-return-risk-financial-portfolio", "name": "The Return and Risk of a Financial Portfolio", "sortOrder": 8},
+    {"topic": "quant", "slug": "quant-m09-simulation-asset-prices-returns", "name": "Simulation of Financial Asset Prices and Returns", "sortOrder": 9},
+    {"topic": "quant", "slug": "quant-m10-simple-linear-regression-finance", "name": "Applications of Simple Linear Regression in Finance", "sortOrder": 10},
+    {"topic": "quant", "slug": "quant-m11-introduction-financial-data-science", "name": "Introduction to Financial Data Science", "sortOrder": 11}
+  ],
+  "concepts": [],
+  "formulas": [],
+  "questions": [],
+  "assessmentSets": []
+}
