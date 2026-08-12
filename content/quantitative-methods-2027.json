@@ -1,0 +1,26 @@
+{
+  "program": "CFA Program – Level I 2027",
+  "sourceCode": "CFA-27-02-LI-B",
+  "topic": "Quantitative Methods",
+  "topicSlug": "quant",
+  "courseId": 2111,
+  "courseUrl": "https://learn.cfainstitute.org/courses/2111/",
+  "moduleCount": 11,
+  "totalQuestions": 302,
+  "practicePackQuestions": 111,
+  "standardQuestions": 191,
+  "practicePackSharePercent": 36.8,
+  "modules": [
+    {"number": 1, "slug": "returns-financial-assets-instruments", "name": "Returns of Financial Assets and Instruments", "totalQuestions": 34, "practicePackQuestions": 7, "standardQuestions": 27},
+    {"number": 2, "slug": "types-financial-returns", "name": "Types of Financial Returns", "totalQuestions": 6, "practicePackQuestions": 2, "standardQuestions": 4},
+    {"number": 3, "slug": "benchmarking-returns", "name": "Benchmarking Returns", "totalQuestions": 33, "practicePackQuestions": 12, "standardQuestions": 21},
+    {"number": 4, "slug": "time-value-money-finance", "name": "The Time Value of Money in Finance", "totalQuestions": 29, "practicePackQuestions": 14, "standardQuestions": 15},
+    {"number": 5, "slug": "statistical-characteristics-asset-returns", "name": "Statistical Characteristics of Asset Returns", "totalQuestions": 39, "practicePackQuestions": 14, "standardQuestions": 25},
+    {"number": 6, "slug": "statistical-distributions-asset-prices-returns", "name": "Statistical Distributions for Financial Asset Prices and Returns", "totalQuestions": 24, "practicePackQuestions": 9, "standardQuestions": 15},
+    {"number": 7, "slug": "estimation-hypothesis-testing", "name": "Estimation and Hypothesis Testing", "totalQuestions": 58, "practicePackQuestions": 24, "standardQuestions": 34},
+    {"number": 8, "slug": "return-risk-financial-portfolio", "name": "The Return and Risk of a Financial Portfolio", "totalQuestions": 19, "practicePackQuestions": 6, "standardQuestions": 13},
+    {"number": 9, "slug": "simulation-asset-prices-returns", "name": "Simulation of Financial Asset Prices and Returns", "totalQuestions": 19, "practicePackQuestions": 6, "standardQuestions": 13},
+    {"number": 10, "slug": "simple-linear-regression-finance", "name": "Applications of Simple Linear Regression in Finance", "totalQuestions": 29, "practicePackQuestions": 12, "standardQuestions": 17},
+    {"number": 11, "slug": "introduction-financial-data-science", "name": "Introduction to Financial Data Science", "totalQuestions": 12, "practicePackQuestions": 5, "standardQuestions": 7}
+  ]
+}
