@@ -1,0 +1,21 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run unit tests
+        env:
+          DB_PATH: /tmp/cfa-tests.sqlite3
+        run: PYTHONPATH=. python -m unittest discover -s tests -v
+      - name: Compile Python
+        run: python -m py_compile server.py module_server.py module1_seed.py learning_engine.py content_import.py db.py
