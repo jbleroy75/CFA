@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "module-template-v1",
+  "program": "CFA Program – Level I 2027",
+  "topic": "Quantitative Methods",
+  "topicSlug": "quant",
+  "courseId": 2111,
+  "moduleNumber": 1,
+  "slug": "quant-m01-returns-financial-assets",
+  "title": "Returns of Financial Assets and Instruments",
+  "sourceInventory": {
+    "officialTotalQuestionCount": 34,
+    "practicePackIncludedCount": 7,
+    "contentImported": false,
+    "note": "Counts only. No proprietary CFA Institute questions or course text are included in this repository."
+  },
+  "taxonomy": {
+    "status": "provisional-original-study-taxonomy",
+    "isOfficialLOS": false,
+    "note": "Original learning structure for the platform. Replace or refine using user-authored/shareable notes when available."
+  },
+  "masteryPolicy": {
+    "masteredThreshold": 0.85,
+    "minimumConceptThreshold": 0.75,
+    "minimumExposuresPerConcept": 3,
+    "targetAccuracy30d": 0.8
+  },
+  "learningPath": [
+    {"order": 1, "name": "Understand", "description": "Recognize the components of a financial return and the intuition behind each term."},
+    {"order": 2, "name": "Calculate", "description": "Compute one-period price, income and total returns reliably."},
+    {"order": 3, "name": "Chain", "description": "Combine returns across periods using wealth relatives rather than arithmetic addition."},
+    {"order": 4, "name": "Annualize", "description": "Convert cumulative multi-period performance into an annual compound rate."},
+    {"order": 5, "name": "Reverse solve", "description": "Solve for a missing price, distribution or return from the return identity."},
+    {"order": 6, "name": "Master", "description": "Pass mixed, timed and confidence-calibrated questions without fragile guesses."}
+  ],
+  "concepts": [
+    {"slug":"m1-holding-period-return","name":"Holding-Period Return","importance":1.35,"summary":"Measures total gain or loss over one holding period relative to the initial investment.","intuition":"Start with what you paid, add what you received, compare with what you ended with.","prerequisites":[],"traps":["Forgetting cash distributions","Dividing by ending value instead of beginning value"]},
+    {"slug":"m1-price-return","name":"Price Return","importance":1.05,"summary":"The capital gain or loss component generated only by the change in asset price.","intuition":"Ignore cash income and ask how much the market price itself changed relative to the starting price.","prerequisites":["m1-holding-period-return"],"traps":["Including dividends in price return","Using P1 in the denominator"]},
+    {"slug":"m1-income-yield","name":"Income Yield","importance":1.05,"summary":"The cash distribution received during the holding period relative to the initial investment.","intuition":"Income is a separate return engine from the change in market price.","prerequisites":["m1-holding-period-return"],"traps":["Dividing income by ending price","Confusing income yield with total return"]},
+    {"slug":"m1-return-decomposition","name":"Total-Return Decomposition","importance":1.25,"summary":"For a one-period asset return, total return is the price-return component plus the income-yield component.","intuition":"Every unit of performance must come from price movement, cash income, or both.","prerequisites":["m1-price-return","m1-income-yield"],"traps":["Adding percentages built on different denominators","Double-counting distributions"]},
+    {"slug":"m1-wealth-relative","name":"Wealth Relative","importance":1.15,"summary":"The factor 1 + R converts a return into a multiplicative growth factor.","intuition":"Returns compound by multiplying growth factors, not by repeatedly adding percentages.","prerequisites":["m1-holding-period-return"],"traps":["Treating -20% and +20% as offsetting","Adding sequential returns"]},
+    {"slug":"m1-cumulative-return","name":"Multi-Period Cumulative Return","importance":1.3,"summary":"Combines sequential returns by multiplying wealth relatives and subtracting one.","intuition":"Each period acts on the wealth left by the previous period.","prerequisites":["m1-wealth-relative"],"traps":["Adding period returns","Forgetting to subtract one after multiplying factors"]},
+    {"slug":"m1-annualized-return","name":"Annualized Compound Return","importance":1.3,"summary":"The constant annual compound rate that reproduces a multi-year cumulative return.","intuition":"Find the equal yearly growth factor whose repeated multiplication reaches the same terminal wealth.","prerequisites":["m1-cumulative-return"],"traps":["Dividing cumulative return by the number of years","Using n instead of 1/n as the exponent"]},
+    {"slug":"m1-reverse-return","name":"Reverse Return Problems","importance":1.15,"summary":"Rearranges the return identity to solve for an unknown beginning price, ending price, income or required return.","intuition":"The same return equation should work in both directions; do not memorize separate formulas unnecessarily.","prerequisites":["m1-return-decomposition"],"traps":["Wrong algebraic sign on income","Applying the return to the ending rather than beginning value"]}
+  ],
+  "formulas": [
+    {"concept":"m1-holding-period-return","name":"Holding-Period Return","expression":"R = (P1 - P0 + D) / P0","variables":{"P0":"beginning price/value","P1":"ending price/value","D":"cash distribution during the period","R":"holding-period return"},"explanation":"Total one-period return combines the capital gain/loss and cash income, divided by beginning value."},
+    {"concept":"m1-price-return","name":"Price Return","expression":"R_price = (P1 - P0) / P0","variables":{"P0":"beginning price","P1":"ending price"},"explanation":"Price-only component of return."},
+    {"concept":"m1-income-yield","name":"Income Yield","expression":"R_income = D / P0","variables":{"D":"cash income","P0":"beginning price"},"explanation":"Cash-income component of one-period return."},
+    {"concept":"m1-cumulative-return","name":"Cumulative Return","expression":"R_cum = product(1 + R_t) - 1","variables":{"R_t":"return in period t"},"explanation":"Sequential returns compound multiplicatively."},
+    {"concept":"m1-annualized-return","name":"Annualized Compound Return","expression":"R_ann = (1 + R_cum)^(1/n) - 1","variables":{"R_cum":"cumulative return over n years","n":"number of years"},"explanation":"Equivalent constant annual compound rate."},
+    {"concept":"m1-reverse-return","name":"Ending Value from Required Return","expression":"P1 = P0(1 + R) - D","variables":{"P0":"beginning value","R":"required holding-period return","D":"cash distribution","P1":"required ending value"},"explanation":"Rearrangement of the holding-period return identity."}
+  ],
+  "flashcards": [
+    {"concept":"m1-holding-period-return","front":"What belongs in a one-period total return?","back":"Price change plus cash distributions, all relative to beginning value."},
+    {"concept":"m1-holding-period-return","front":"What denominator anchors a standard holding-period return?","back":"The beginning price or beginning invested value."},
+    {"concept":"m1-price-return","front":"Does a dividend belong in price return?","back":"No. Price return isolates the change in market price."},
+    {"concept":"m1-income-yield","front":"How do you express cash income as a return component?","back":"Cash distribution divided by beginning value."},
+    {"concept":"m1-return-decomposition","front":"One-period total return decomposes into which two components?","back":"Price return + income yield."},
+    {"concept":"m1-wealth-relative","front":"A return of -20% corresponds to what wealth relative?","back":"0.80."},
+    {"concept":"m1-wealth-relative","front":"Why do +20% and -20% not cancel?","back":"They apply to different wealth bases: 1.20 × 0.80 = 0.96, a 4% loss."},
+    {"concept":"m1-cumulative-return","front":"How do you combine sequential period returns?","back":"Multiply their wealth relatives and subtract one."},
+    {"concept":"m1-cumulative-return","front":"When is adding period returns generally wrong?","back":"When measuring compounded multi-period performance rather than an approximation for very small returns."},
+    {"concept":"m1-annualized-return","front":"Why is cumulative return / years usually not the annual compound return?","back":"Because compounding is multiplicative; annualization uses the nth root of the cumulative wealth factor."},
+    {"concept":"m1-annualized-return","front":"What does an annualized compound return represent?","back":"The constant annual rate that would produce the same terminal wealth over n years."},
+    {"concept":"m1-reverse-return","front":"If required return and distribution are known, how do you solve for ending price?","back":"Rearrange the holding-period return identity: ending value = beginning value × (1 + return) − distribution."}
+  ]
+}
